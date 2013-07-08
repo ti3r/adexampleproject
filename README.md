@@ -9,7 +9,7 @@ This application is published under the MIT Lincense with the purpose of educati
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Alexandro Blanco Santana <ti3r.bubblenet@
+Copyright (c) 2013 Alexandro Blanco Santana <ti3r.bubblenet@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
