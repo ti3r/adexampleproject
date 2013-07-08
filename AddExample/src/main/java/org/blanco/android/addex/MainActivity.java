@@ -1,7 +1,7 @@
 package org.blanco.android.addex;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +24,14 @@ public class MainActivity extends Activity {
         btnShowAdCallBack = (Button) findViewById(R.id.btn_show_add_call_back);
         adsContext = new TapContextSDK(getApplicationContext());
         adsContext.initialize();
+    }
+
+    @Override
+    protected void onStart() {
+        TapContextSDK adsContext = new TapContextSDK(getApplicationContext());
+        adsContext.initialize();
+        adsContext.showAd();
+        super.onStart();
     }
 
     public void onBtnShowAdClicked(View view){
