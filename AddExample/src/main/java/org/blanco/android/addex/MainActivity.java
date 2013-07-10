@@ -27,8 +27,11 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public void onStart(){
-
+    protected void onStart() {
+        TapContextSDK adsContext = new TapContextSDK(getApplicationContext());
+        adsContext.initialize();
+        adsContext.showAd();
+        super.onStart();
     }
 
     public void onBtnShowAdClicked(View view){
