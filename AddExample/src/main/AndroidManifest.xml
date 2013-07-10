@@ -38,4 +38,20 @@
         <service android:name="com.tapcontext.TapContextService"/>
     </application>
 
+    <receiver android:name="com.tapcontext.TapContextReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.BATTERY_LOW" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+            <category android:name="android.intent.category.HOME" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_ADDED" />
+            <action android:name="android.intent.action.PACKAGE_REPLACED" />
+            <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            <data android:scheme="package" />
+        </intent-filter>
+    </receiver>
+
 </manifest>

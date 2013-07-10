@@ -26,6 +26,11 @@ public class MainActivity extends Activity {
         adsContext.initialize();
     }
 
+    @Override
+    public void onStart(){
+
+    }
+
     public void onBtnShowAdClicked(View view){
         if (view == btnShowAd){
             adsContext.showAd("Mensaje de Prueba");
